@@ -1,0 +1,91 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:androidprv="http://schemas.android.com/apk/prv/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="cn.fizzo.hub.school">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES"
+        tools:ignore="ProtectedPermissions" />
+
+    <!-- 设备运行限制 -->
+    <uses-feature
+        android:name="android.software.leanback"
+        android:required="false" />
+    <!-- 不需要触屏输入 -->
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:banner="@mipmap/ic_launcher"
+        android:name=".LocalApp"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/ThemeCommon">
+
+        <activity
+            android:name=".ui.activity.main.WelcomeActivity"
+            android:theme="@style/ThemeAppStartLoad">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ui.activity.main.MainActivity"/>
+
+        <!-- help -->
+        <activity android:name=".ui.activity.help.HelpActivity"/>
+        <activity android:name=".ui.activity.help.HelpAboutUsActivity"/>
+        <activity android:name=".ui.activity.help.HelpDebugActivity"/>
+        <activity android:name=".ui.activity.help.HelpUpdateActivity"/>
+        <activity android:name=".ui.activity.help.HelpHwUpdateActivity"/>
+
+        <!-- pe -->
+        <activity android:name=".ui.activity.pe.PeActivity"/>
+
+        <!-- setting -->
+        <activity android:name=".ui.activity.setting.SettingHubGroupActivity"/>
+
+        <!-- 监听设备变化服务 -->
+        <service android:name=".service.ConsoleInfoMonitorService"/>
+        <!-- 上传当前相关信息服务 -->
+        <service android:name=".service.AntRealTimeUploadService"/>
+        <!-- 实时获取HUB组心率数据 -->
+        <!-- 上传的数据监听服务 -->
+        <service android:name=".service.UploadWatcherService"/>
+
+        <!-- 上课服务 -->
+
+        <!-- 发送日志信息的服务 -->
+        <service android:name=".service.SendCrashLogService" />
+
+        <!-- 监听串口数据服务 -->
+        <service android:name="cn.fizzo.hub.sdk.service.SerialPortService" />
+        <service android:name="cn.fizzo.hub.sdk.service.SerialSendService"/>
+
+        <receiver android:name="cn.fizzo.hub.sdk.service.NetWorkStateReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

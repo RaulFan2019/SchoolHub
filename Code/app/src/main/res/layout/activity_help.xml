@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    android:orientation="vertical">
+
+    <cn.fizzo.hub.school.ui.widget.common.NormalTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="26dp"
+        android:text="HUB帮助"
+        android:textColor="@color/tv_title"
+        android:textSize="42dp" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/ll_version"
+                style="@style/HelpSelectLl"
+                android:layout_marginTop="26dp">
+
+                <cn.fizzo.hub.school.ui.widget.common.NormalTextView
+                    style="@style/HelpSelectName"
+                    android:text="软件版本" />
+
+                <cn.fizzo.hub.school.ui.widget.common.NormalTextView
+                    android:id="@+id/tv_version"
+                    style="@style/HelpSelectValue" />
+
+                <View style="@style/HelpSelectArrow" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_hw_version"
+                style="@style/HelpSelectLl"
+                android:layout_marginTop="26dp">
+
+                <cn.fizzo.hub.school.ui.widget.common.NormalTextView
+                    style="@style/HelpSelectName"
+                    android:text="固件版本" />
+
+                <cn.fizzo.hub.school.ui.widget.common.NormalTextView
+                    android:id="@+id/tv_hw_version"
+                    style="@style/HelpSelectValue" />
+
+                <View style="@style/HelpSelectArrow" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_device_test"
+                style="@style/HelpSelectLl"
+                android:layout_marginTop="26dp">
+
+                <cn.fizzo.hub.school.ui.widget.common.NormalTextView
+                    style="@style/HelpSelectName"
+                    android:text="设备调试" />
+
+                <cn.fizzo.hub.school.ui.widget.common.NormalTextView style="@style/HelpSelectValue" />
+
+                <View style="@style/HelpSelectArrow" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_data_reset"
+                style="@style/HelpSelectLl"
+                android:layout_marginTop="26dp">
+
+                <cn.fizzo.hub.school.ui.widget.common.NormalTextView
+                    style="@style/HelpSelectName"
+                    android:text="数据重置" />
+
+                <cn.fizzo.hub.school.ui.widget.common.NormalTextView style="@style/HelpSelectValue" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_data_set_ip"
+                style="@style/HelpSelectLl"
+                android:layout_marginTop="26dp">
+
+                <cn.fizzo.hub.school.ui.widget.common.NormalTextView
+                    style="@style/HelpSelectName"
+                    android:text="设置服务器地址" />
+
+                <cn.fizzo.hub.school.ui.widget.common.NormalTextView
+                    android:id="@+id/tv_set_service_ip"
+                    style="@style/HelpSelectValue" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_about_us"
+                style="@style/HelpSelectLl"
+                android:layout_marginTop="26dp">
+
+                <cn.fizzo.hub.school.ui.widget.common.NormalTextView
+                    style="@style/HelpSelectName"
+                    android:text="关于我们" />
+
+                <cn.fizzo.hub.school.ui.widget.common.NormalTextView style="@style/HelpSelectValue" />
+
+                <View style="@style/HelpSelectArrow" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

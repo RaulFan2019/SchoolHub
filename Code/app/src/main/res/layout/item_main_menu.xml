@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="358dp"
+    android:layout_height="492dp"
+    android:orientation="vertical"
+    android:background="@drawable/selector_item_main_menu"
+    android:gravity="center_horizontal"
+    android:focusableInTouchMode="true"
+    android:focusable="true">
+
+    <View
+        android:id="@+id/v_ic"
+        android:layout_width="106dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="119dp"/>
+
+    <cn.fizzo.hub.school.ui.widget.common.NormalTextView
+        android:id="@+id/tv_title"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="34.5dp"/>
+
+</LinearLayout>

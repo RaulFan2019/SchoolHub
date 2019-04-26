@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="604dp"
+    android:layout_height="307dp"
+    android:background="@drawable/bg_sport_lesson_warning_mover"
+    android:orientation="horizontal">
+
+    <!-- 学生心率 -->
+    <LinearLayout
+        android:layout_width="79dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="13.2dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <cn.fizzo.hub.school.ui.widget.common.CircularImage
+            android:id="@+id/iv_avatar"
+            android:layout_width="66.dp"
+            android:layout_height="66.dp" />
+
+        <TextView
+            android:id="@+id/tv_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:textColor="#E6E6E6"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#E6E6E6"
+            android:layout_marginTop="5dp"
+            android:lines="1"
+            android:ellipsize="end"
+            android:textSize="20dp" />
+
+        <cn.fizzo.hub.school.ui.widget.common.NumTextView
+            android:id="@+id/tv_curr_hr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:textColor="@android:color/white"
+            android:textSize="42dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13.2dp"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/tv_secondly"
+            android:text="心率"/>
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chart_hr"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</LinearLayout>

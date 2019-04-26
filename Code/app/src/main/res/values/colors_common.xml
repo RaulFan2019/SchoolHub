@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="primary">#FFFFFF</color>
+    <color name="primaryDark">#171619</color>
+    <color name="accent">#fd0002</color>
+
+    <color name="bg_divider">#E0E0E0</color>
+
+
+    <color name="tv_dlg_btn_normal">#5A5662</color>
+
+    <color name="tv_title">#262528</color>
+    <color name="tv_dialog_title">#5A5662</color>
+
+    <color name="tv_secondly">#5A5662</color>
+
+    <color name="chart_ruler">#88262528</color>
+
+</resources>

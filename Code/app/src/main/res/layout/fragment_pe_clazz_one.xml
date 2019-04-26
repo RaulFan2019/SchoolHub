@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <!-- title -->
+    <LinearLayout
+        android:layout_width="1254dp"
+        android:layout_height="66dp"
+        android:background="@drawable/bg_pe_clazz_one_title"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="336dp"
+            android:layout_height="55dp"
+            android:background="@drawable/bg_frame_gray_30_radius"
+            android:gravity="center"
+            android:textColor="#5A5662"
+            android:textSize="26dp" />
+
+    </LinearLayout>
+
+    <!-- data -->
+    <LinearLayout
+        android:layout_width="1275dp"
+        android:layout_height="219dp"
+        android:background="@drawable/bg_lesson_clazz_data"
+        android:orientation="horizontal">
+
+        <!-- 第一个代表 -->
+        <LinearLayout
+            android:layout_width="194dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="33dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <cn.fizzo.hub.school.ui.widget.common.CircularImage
+                    android:id="@+id/iv_avatar_1"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:layout_marginLeft="2dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <cn.fizzo.hub.school.ui.widget.common.NormalTextView
+                        android:id="@+id/tv_mover_no_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:textSize="20dp" />
+
+                    <cn.fizzo.hub.school.ui.widget.common.NormalTextView
+                        android:id="@+id/tv_mover_name_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:textColor="@android:color/white"
+                        android:textSize="20dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <cn.fizzo.hub.school.ui.widget.common.NumTextView
+                android:id="@+id/tv_curr_bpm_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:paddingLeft="10dp"
+                android:textColor="@color/pe_value"
+                android:textSize="53dp" />
+
+            <TextView
+                android:id="@+id/tv_rest_bpm_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textColor="@color/pe_value"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <!-- 女生强度 -->
+        <LinearLayout
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical">
+
+            <cn.fizzo.hub.school.ui.widget.common.NumTextView
+                android:id="@+id/tv_power_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/pe_value"
+                android:textSize="52dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="平均强度"
+                android:textColor="@color/pe_value"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <!-- 密度 -->
+        <LinearLayout
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="80dp"
+                android:layout_height="60dp">
+
+                <cn.fizzo.hub.school.ui.widget.common.NumTextView
+                    android:id="@+id/tv_density"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/pe_value"
+                    android:textSize="50dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="6dp"
+                    android:text="%"
+                    android:textColor="@color/pe_value"
+                    android:textSize="18dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="有效密度"
+                android:textColor="@color/pe_value"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <!-- 男生强度 -->
+        <LinearLayout
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginLeft="99dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical">
+
+            <cn.fizzo.hub.school.ui.widget.common.NumTextView
+                android:id="@+id/tv_power_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/pe_value"
+                android:textSize="52dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="平均强度"
+                android:textColor="@color/pe_value"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+
+        <!-- 男生心率 -->
+        <LinearLayout
+            android:layout_width="194dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="33dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <cn.fizzo.hub.school.ui.widget.common.CircularImage
+                    android:id="@+id/iv_avatar_2"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:layout_marginLeft="2dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <cn.fizzo.hub.school.ui.widget.common.NormalTextView
+                        android:id="@+id/tv_mover_no_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:textSize="20dp" />
+
+                    <cn.fizzo.hub.school.ui.widget.common.NormalTextView
+                        android:id="@+id/tv_mover_name_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:textColor="@android:color/white"
+                        android:textSize="20dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <cn.fizzo.hub.school.ui.widget.common.NumTextView
+                android:id="@+id/tv_curr_bpm_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:paddingLeft="10dp"
+                android:textColor="@color/pe_value"
+                android:textSize="53dp" />
+
+            <TextView
+                android:id="@+id/tv_rest_bpm_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textColor="@color/pe_value"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="1275dp"
+        android:layout_height="350dp"
+        android:background="@drawable/bg_chat"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chart_hr"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="33dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="14dp"
+            android:layout_marginTop="4dp"
+            android:text="用时（分钟）"
+            android:textColor="@color/pe_value"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_alert"
+        android:layout_width="1252dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:background="@drawable/bg_frame_accent_30_radius"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="32.5dp"
+            android:layout_height="34.5dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/ic_alert" />
+
+        <LinearLayout
+            android:id="@+id/ll_alert_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"/>
+    </LinearLayout>
+
+</LinearLayout>

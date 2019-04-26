@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/primary"
+    android:orientation="vertical">
+
+    <cn.fizzo.hub.school.ui.widget.common.NormalTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:layout_marginTop="64dp"
+        android:textColor="@color/tv_title"
+        android:text="@string/help_about_us_title"/>
+
+    <LinearLayout
+        android:layout_width="779dp"
+        android:layout_height="463dp"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/bg_help_about_us"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <cn.fizzo.hub.school.ui.widget.common.SpacingNormalTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/tv_secondly"
+            android:lineSpacingExtra="10dp"
+            android:textSize="15dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="49dp"
+            android:text="@string/help_about_us_content"/>
+
+        <View
+            android:layout_width="118dp"
+            android:layout_height="118dp"
+            android:layout_marginTop="97dp"
+            android:background="@drawable/ic_fizzo_wechart"/>
+
+        <cn.fizzo.hub.school.ui.widget.common.NormalTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13dp"
+            android:textColor="@color/tv_secondly"
+            android:layout_marginTop="14dp"
+            android:text="@string/help_about_us_tip_1"/>
+
+        <cn.fizzo.hub.school.ui.widget.common.NormalTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/tv_secondly"
+            android:textSize="13dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/help_about_us_tip_2"/>
+
+    </LinearLayout>
+
+    <cn.fizzo.hub.school.ui.widget.common.NormalTextView
+        android:id="@+id/tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13dp"
+        android:layout_marginTop="81dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/tv_secondly"/>
+
+</LinearLayout>

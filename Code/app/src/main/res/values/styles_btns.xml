@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Button -->
+    <style name="BtnAccent">
+        <item name="android:layout_width">275dp</item>
+        <item name="android:layout_height">75dp</item>
+        <item name="android:background">@drawable/selector_btn_accent</item>
+        <item name="android:textColor">@drawable/selector_btn_tx_dlg</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <style name="BtnDialog">
+        <item name="android:layout_width">275dp</item>
+        <item name="android:layout_height">75dp</item>
+        <item name="android:background">@drawable/selector_btn_dlg</item>
+        <item name="android:textColor">@drawable/selector_btn_tx_dlg</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+</resources>

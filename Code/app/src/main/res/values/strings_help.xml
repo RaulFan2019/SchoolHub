@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- about us -->
+    <string name="help_about_us_tip_1">More services</string>
+    <string name="help_about_us_tip_2">Follow Wechat Gongzhonghao</string>
+
+    <string name="help_about_us_title">About us</string>
+    <string name="help_about_us_content">The Fifth Zone Fitness Lab (Shanghai) Co., Ltd. Focusing on Sport and health smart products, including precision HR wearable devices, HRM system and Smart GYM Cloud platform etc. Providing Heart Rate monitoring and analyzing solution for school, sport team, smart GYM and Fitness product OEMs.</string>
+
+
+</resources>

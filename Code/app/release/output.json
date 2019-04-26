@@ -1,0 +1,5 @@
+<<<<<<< HEAD
+[{"outputType":{"type":"APK"},"apkInfo":{"type":"MAIN","splits":[],"versionCode":63},"path":"app-release.apk","properties":{"packageId":"cn.fizzo.hub.school","split":"","minSdkVersion":"21"}}]
+=======
+[{"outputType":{"type":"APK"},"apkInfo":{"type":"MAIN","splits":[],"versionCode":52},"path":"app-release.apk","properties":{"packageId":"cn.fizzo.hub.school","split":"","minSdkVersion":"21"}}]
+>>>>>>> 6c6bdaba3a4d28e5782d607b86516dec95f01afa

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/bg_pe_report_two">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="22dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_clazz_name"
+            android:layout_width="140dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="30dp"
+            android:textSize="21dp"
+            android:textColor="#5A5662"
+            android:gravity="center_vertical|center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="21dp"
+            android:textColor="#5A5662"
+            android:layout_marginLeft="43dp"
+            android:text="课程结束数据分析"/>
+    </LinearLayout>
+
+    <View
+        style="@style/DividerH"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="21.2dp"
+        android:layout_marginBottom="22.5dp"/>
+
+    <LinearLayout
+        android:layout_width="574dp"
+        android:layout_height="106dp"
+        android:orientation="horizontal">
+        <LinearLayout style="@style/PeReportTwoDataLl">
+
+            <TextView
+                android:id="@+id/tv_power"
+                style="@style/PeReportTwoDataValue" />
+
+            <TextView
+                style="@style/PeReportTwoDataTag"
+                android:text="平均强度" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/PeReportTwoDataLl">
+
+            <TextView
+                android:id="@+id/tv_density"
+                style="@style/PeReportTwoDataValue" />
+
+            <TextView
+                style="@style/PeReportTwoDataTag"
+                android:text="平均密度" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/PeReportTwoDataLl">
+
+            <TextView
+                android:id="@+id/tv_bpm"
+                style="@style/PeReportTwoDataValue" />
+
+            <TextView
+                style="@style/PeReportTwoDataTag"
+                android:text="平均心率" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/PeReportTwoDataLl">
+
+            <TextView
+                android:id="@+id/tv_alert_times"
+                style="@style/PeReportTwoDataValue" />
+
+            <TextView
+                style="@style/PeReportTwoDataTag"
+                android:text="报警次数" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="574dp"
+        android:layout_height="434dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chart_hr"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</LinearLayout>
